@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/letsplaybingo/static/js/runtime~main.6b332143.js"
   },
   {
-    "revision": "bd52465266f65d62b10b",
-    "url": "/letsplaybingo/static/js/main.c246d8d6.chunk.js"
+    "revision": "d02d9e4f3be3cc9f8b46",
+    "url": "/letsplaybingo/static/js/main.ca6b2e86.chunk.js"
   },
   {
     "revision": "aa4b0c43502bdc6e1297",
     "url": "/letsplaybingo/static/js/2.61dc7f9f.chunk.js"
   },
   {
-    "revision": "bd52465266f65d62b10b",
-    "url": "/letsplaybingo/static/css/main.7bba9988.chunk.css"
+    "revision": "d02d9e4f3be3cc9f8b46",
+    "url": "/letsplaybingo/static/css/main.8fd9bd1f.chunk.css"
   },
   {
     "revision": "aa4b0c43502bdc6e1297",
     "url": "/letsplaybingo/static/css/2.1090ef56.chunk.css"
   },
   {
-    "revision": "8deea17de2b605c640dfb051242ae796",
+    "revision": "475491772f681a5ec28287113ad0f42d",
     "url": "/letsplaybingo/index.html"
   }
 ];

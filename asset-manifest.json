@@ -1,16 +1,16 @@
 {
-  "main.css": "/letsplaybingo/static/css/main.7bba9988.chunk.css",
-  "main.js": "/letsplaybingo/static/js/main.c246d8d6.chunk.js",
-  "main.js.map": "/letsplaybingo/static/js/main.c246d8d6.chunk.js.map",
+  "main.css": "/letsplaybingo/static/css/main.8fd9bd1f.chunk.css",
+  "main.js": "/letsplaybingo/static/js/main.ca6b2e86.chunk.js",
+  "main.js.map": "/letsplaybingo/static/js/main.ca6b2e86.chunk.js.map",
   "runtime~main.js": "/letsplaybingo/static/js/runtime~main.6b332143.js",
   "runtime~main.js.map": "/letsplaybingo/static/js/runtime~main.6b332143.js.map",
   "static/css/2.1090ef56.chunk.css": "/letsplaybingo/static/css/2.1090ef56.chunk.css",
   "static/js/2.61dc7f9f.chunk.js": "/letsplaybingo/static/js/2.61dc7f9f.chunk.js",
   "static/js/2.61dc7f9f.chunk.js.map": "/letsplaybingo/static/js/2.61dc7f9f.chunk.js.map",
   "index.html": "/letsplaybingo/index.html",
-  "precache-manifest.8750e1a82e73181fb0727114a14cd74d.js": "/letsplaybingo/precache-manifest.8750e1a82e73181fb0727114a14cd74d.js",
+  "precache-manifest.75587a18755f49856427e3d97b2359ad.js": "/letsplaybingo/precache-manifest.75587a18755f49856427e3d97b2359ad.js",
   "service-worker.js": "/letsplaybingo/service-worker.js",
   "static/css/2.1090ef56.chunk.css.map": "/letsplaybingo/static/css/2.1090ef56.chunk.css.map",
-  "static/css/main.7bba9988.chunk.css.map": "/letsplaybingo/static/css/main.7bba9988.chunk.css.map",
+  "static/css/main.8fd9bd1f.chunk.css.map": "/letsplaybingo/static/css/main.8fd9bd1f.chunk.css.map",
   "static/media/logo.svg": "/letsplaybingo/static/media/logo.5a6f7124.svg"
 }
