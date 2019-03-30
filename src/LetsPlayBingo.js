@@ -503,7 +503,7 @@ class LetsPlayBingo extends Component {
               <p>Let's Play Bingo! © 2018 <a href="http://karolbrennan.com" target="_blank" rel="noopener noreferrer">Karol Brennan</a></p>
             </div>
             <div className="col c25 text-right">
-              <p>Check out this project on <a href="http://github.com/karolbrennan/letsplaybingo" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+              <p>Check out this project on <a href="http://github.com/gardenofegan/letsplaybingo" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </div>
           </div>
         </footer>
