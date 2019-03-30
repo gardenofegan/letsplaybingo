@@ -287,7 +287,7 @@ class LetsPlayBingo extends Component {
               <button onClick={this.callNumber} disabled={this.state.running ? 'disabled' : ''}>Next Number</button>
               <button onClick={this.resetGame}>Reset</button>
             </div>
-            <div className="col c40 text-center">
+            <div className="col c35 text-center">
               <div id="speed">
                 <span>Slow</span><input onChange={(e) => this.setDelay(e)} type="range" value={this.state.delay}  min="5000" max="16000" step="1000"/><span>Fast</span>
               </div>
@@ -303,6 +303,9 @@ class LetsPlayBingo extends Component {
                         ))}
                 />
               : "Sorry, your browser doesn't support our vocal caller! Try Chrome!"}
+            </div>
+            <div className="col c5 text-center">
+              <button onClick={this.toggleProjectorMode}>Toggle</button>
             </div>
           </div>
         </section>
