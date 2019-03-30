@@ -12,28 +12,8 @@ class BallDisplay extends React.Component {
   render() {
     let currentBall = _.where(this.props.balls, {active: true})[0];
     if (currentBall) {
-      let color = 'white';
-      switch (currentBall.letter) {
-        case 'B':
-          color = 'blue';
-          break;
-        case 'I':
-          color = 'red';
-          break;
-        case 'N':
-          color = 'white';
-          break;
-        case 'G':
-          color = 'green';
-          break;
-        case 'O':
-          color = 'orange';
-          break;
-        default:
-          break;
-      }
       return (
-        <div id="ball" className={color + " relative notranslate"}>
+        <div id="ball" className={"white relative notranslate"}>
           <div id="ballcount">{_.where(this.props.balls, {called: true}).length}</div>
           <div className="content">
             <span>

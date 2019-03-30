@@ -391,6 +391,29 @@ class LetsPlayBingo extends Component {
             </div>
             <div className="col c15 padding">
               <BallDisplay balls={this.state.balls}/>
+              <div id="bingopattern" className="notranslate">
+                {_.map(pattern, (column, letter) => (
+                  <div key={letter} className="pattern-col">
+                    <div className="pattern-letter">{letter}</div>
+                    {_.map(column, (slot, index) => (
+                      <div key={letter + index}
+                          className={slot ? "selected pattern-slot" : "pattern-slot"}
+                          onClick={(e) => this.updatePattern(letter, index, slot)}>&nbsp;
+                      </div>
+                    ))}
+                  </div>
+                ))}
+                <Select
+                  name="patternselect"
+                  placeholder="Choose Pattern"
+                  value={this.state.selectedPattern}
+                  searchable
+                  onBlurResetsInput={true}
+                  clearable
+                  onChange={this.choosePattern}
+                  options={patternArray[0]}
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -445,68 +468,23 @@ class LetsPlayBingo extends Component {
                 />
               : "Sorry, your browser doesn't support our vocal caller! Try Chrome!"}
             </div>
-            <div className="col c5 text-center">
-              <button onClick={this.toggleProjectorMode}>Toggle</button>
-            </div>
           </div>
         </section>
-
-        <section>
-          <div className="row">
-            <div className="col c20 padding text-center">
-            <div id="bingopattern" className="notranslate">
-                {_.map(pattern, (column, letter) => (
-                  <div key={letter} className="pattern-col">
-                    <div className="pattern-letter">{letter}</div>
-                    {_.map(column, (slot, index) => (
-                      <div key={letter + index}
-                          className={slot ? "selected pattern-slot" : "pattern-slot"}
-                          onClick={(e) => this.updatePattern(letter, index, slot)}>&nbsp;
-                      </div>
-                    ))}
-                  </div>
-                ))}
-                <Select
-                  name="patternselect"
-                  placeholder="Choose Pattern"
-                  value={this.state.selectedPattern}
-                  searchable
-                  onBlurResetsInput={true}
-                  clearable
-                  onChange={this.choosePattern}
-                  options={patternArray[0]}
-                />
-              </div>
-            </div>
-            <div className="col c60 padding">
-              <p className="description">Use this free bingo caller to host your own bingo games at home! You
-              provide the cards, we generate the bingo numbers! Completely free bingo app - no downloads necessary!
-              </p>
-              <p className="disclaimer">
-                LetsPlayBingo.io does not intend for the bingo caller contained on this website to be used for illegal or gambling purposes. The information and bingo caller contained on this website is for entertainment purposes only. This website, its owners and associates do not have any control over the use of this bingo caller and cannot be held liable for any monetary or other losses incurred by unapproved use of this bingo caller or generated bingo cards.
-              </p>
-              <div className="top-bottom-padding">
-                <div className="addthis_inline_share_toolbox"></div>
-              </div>
-            </div>
-            <div className="col c20 text-center padding">
-              <img className="logo" src={logo} alt="Let's Play Bingo Logo"/>
-              <p className="intl">We're now international!</p>
-              <div id="google_translate_element"></div>
-            </div>
-          </div>
-        </section>
-
         <footer>
           <div className="row">
             <div className="col c25 text-left">
-              <p>For entertainment purposes only.</p>
+              <p>
+                For entertainment purposes only.
+              </p>
             </div>
             <div className="col c50 text-center">
-              <p>Let's Play Bingo! © 2018 <a href="http://karolbrennan.com" target="_blank" rel="noopener noreferrer">Karol Brennan</a></p>
+              <img className="logo" src={logo} alt="Let's Play Bingo Logo"/>
             </div>
             <div className="col c25 text-right">
-              <p>Check out this project on <a href="http://github.com/gardenofegan/letsplaybingo" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+              <p>
+                Check out this project on <a href="http://github.com/gardenofegan/letsplaybingo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <br/>Based on code from <a href="http://karolbrennan.com" target="_blank" rel="noopener noreferrer">Karol Brennan</a>
+              </p>
             </div>
           </div>
         </footer>
