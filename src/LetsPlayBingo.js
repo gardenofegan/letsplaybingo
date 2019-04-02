@@ -403,8 +403,10 @@ class LetsPlayBingo extends Component {
                     ))}
                   </div>
                 ))}
-                <Select
+              </div>
+              <Select
                   name="patternselect"
+                  className="pattern-selector"
                   placeholder="Choose Pattern"
                   value={this.state.selectedPattern}
                   searchable
@@ -413,14 +415,13 @@ class LetsPlayBingo extends Component {
                   onChange={this.choosePattern}
                   options={patternArray[0]}
                 />
-              </div>
             </div>
           </div>
         </section>
 
         <section id="buttons">
           <div className="row">
-            <div className="col c40">
+            <div className="col c35">
               <div className="row">
                 <div className="col c100">
                   <div className="row">
@@ -451,7 +452,7 @@ class LetsPlayBingo extends Component {
                 </div>
               </div>
             </div>
-            <div className="col c35 text-center">
+            <div className="col c45 text-center">
               <div id="speed">
                 <span>Slow</span><input onChange={(e) => this.setDelay(e)} type="range" value={this.state.delay}  min="5000" max="16000" step="1000"/><span>Fast</span>
               </div>
